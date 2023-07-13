@@ -9,20 +9,23 @@ class CategoryDelegateView extends SliverPersistentHeaderDelegate {
   @override
   Widget build(BuildContext context,double shrinkOffset, bool overlapsContent) {
     double height = MediaQuery.of(context).size.height;
-    return  Container(
-      height: 30*height/812,
-      child: ListView(
-        padding: EdgeInsets.symmetric(horizontal: 11),
-        scrollDirection: Axis.horizontal,
-        children: [
-          CategoryElement(title: "Бургеры", image: AppImages.burgerImage),
-          CategoryElement(title: "Пицца", image: AppImages.pizzaImage),
-          CategoryElement(title: "Фрэнч Доги", image: AppImages.frenchImage),
-          CategoryElement(title: "Снэки", image: AppImages.snekiImage),
-          CategoryElement(title: "Снэки", image: AppImages.snekiImage),
-          CategoryElement(title: "Снэки", image: AppImages.snekiImage),
-        ],
-      ),
+    return  Column(
+      children: [
+        Expanded(
+          child: ListView(
+            padding: EdgeInsets.symmetric(horizontal: 11),
+            scrollDirection: Axis.horizontal,
+            children: [
+              CategoryElement(title: "Бургеры", image: AppImages.burgerImage),
+              CategoryElement(title: "Пицца", image: AppImages.pizzaImage),
+              CategoryElement(title: "Фрэнч Доги", image: AppImages.frenchImage),
+              CategoryElement(title: "Снэки", image: AppImages.snekiImage),
+              CategoryElement(title: "Снэки", image: AppImages.snekiImage),
+              CategoryElement(title: "Снэки", image: AppImages.snekiImage),
+            ],
+          ),
+        ),
+      ],
     );
   }
 

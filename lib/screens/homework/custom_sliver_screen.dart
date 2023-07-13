@@ -57,7 +57,8 @@ class _CustomSliverScreenState extends State<CustomSliverScreen> {
             pinned: true,
             backgroundColor: AppColors.C_111015,
           ),
-          SliverPersistentHeader(delegate: ProductHeaderView()),
+          SliverPersistentHeader(
+              delegate: ProductHeaderView()),
           SliverToBoxAdapter(
             child: Container(
               height: 124*height/812,
@@ -72,6 +73,7 @@ class _CustomSliverScreenState extends State<CustomSliverScreen> {
           ),
           SliverPersistentHeader(delegate: ProductHeaderView2()),
           SliverPersistentHeader(
+            pinned: true,
               delegate: CategoryDelegateView()
           ),
           // SliverToBoxAdapter(
