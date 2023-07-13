@@ -1,8 +1,3 @@
-import 'package:custom_scroll_view/screens/example/example_screen_four.dart';
-import 'package:custom_scroll_view/screens/example/example_screen_one.dart';
-import 'package:custom_scroll_view/screens/example/example_screen_three.dart';
-import 'package:custom_scroll_view/screens/example/example_screen_two.dart';
-import 'package:custom_scroll_view/screens/example/my_home_page.dart';
 import 'package:custom_scroll_view/screens/homework/custom_sliver_screen.dart';
 import 'package:flutter/material.dart';
 

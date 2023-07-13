@@ -1,4 +1,3 @@
-import 'package:custom_scroll_view/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 import '../../../utils/app_images.dart';
@@ -8,14 +7,13 @@ import 'category_element.dart';
 class CategoryDelegateView extends SliverPersistentHeaderDelegate {
   @override
   Widget build(BuildContext context,double shrinkOffset, bool overlapsContent) {
-    double height = MediaQuery.of(context).size.height;
     return  Column(
       children: [
         Expanded(
           child: ListView(
-            padding: EdgeInsets.symmetric(horizontal: 11),
+            padding: const EdgeInsets.symmetric(horizontal: 11),
             scrollDirection: Axis.horizontal,
-            children: [
+            children: const [
               CategoryElement(title: "Бургеры", image: AppImages.burgerImage),
               CategoryElement(title: "Пицца", image: AppImages.pizzaImage),
               CategoryElement(title: "Фрэнч Доги", image: AppImages.frenchImage),

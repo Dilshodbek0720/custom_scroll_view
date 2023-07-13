@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 class ProductHeaderView2 extends SliverPersistentHeaderDelegate {
   @override
   Widget build(BuildContext context,double shrinkOffset, bool overlapsContent) {
-    return Padding(
-        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+    return const Padding(
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
         child: Row(children: [
           Text("Все товары", style: TextStyle(
               fontSize: 16,

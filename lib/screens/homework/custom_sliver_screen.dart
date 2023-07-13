@@ -76,23 +76,6 @@ class _CustomSliverScreenState extends State<CustomSliverScreen> {
             pinned: true,
               delegate: CategoryDelegateView()
           ),
-          // SliverToBoxAdapter(
-          //     child: Container(
-          //       height: 30*height/812,
-          //       child: ListView(
-          //         padding: EdgeInsets.symmetric(horizontal: 11),
-          //         scrollDirection: Axis.horizontal,
-          //         children: [
-          //           CategoryElement(title: "Бургеры", image: AppImages.burgerImage),
-          //           CategoryElement(title: "Пицца", image: AppImages.pizzaImage),
-          //           CategoryElement(title: "Фрэнч Доги", image: AppImages.frenchImage),
-          //           CategoryElement(title: "Снэки", image: AppImages.snekiImage),
-          //           CategoryElement(title: "Снэки", image: AppImages.snekiImage),
-          //           CategoryElement(title: "Снэки", image: AppImages.snekiImage),
-          //         ],
-          //       ),
-          //     )
-          // ),
           SliverPadding(
             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 25),
             sliver: SliverGrid(

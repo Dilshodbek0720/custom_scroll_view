@@ -22,51 +22,51 @@ class GridProduct extends StatelessWidget {
       ),
       child: Column(children: [
         Container(
-          padding: EdgeInsets.all(4),
+          padding: const EdgeInsets.all(4),
           width: 140,
           height: 120*height/812,
           child: Image.asset(image),),
-        SizedBox(height: 5,),
+        const SizedBox(height: 5,),
         Container(
-          margin: EdgeInsets.symmetric(horizontal: 11),
+          margin: const EdgeInsets.symmetric(horizontal: 11),
           width: double.infinity,
           height: 114,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(title, style: TextStyle(
+              Text(title, style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w500,
                   color: AppColors.white
               ),),
-              SizedBox(height: 11,),
-              Text(description, style: TextStyle(
+              const SizedBox(height: 11,),
+              Text(description, style: const TextStyle(
                   fontSize: 11,
                   fontWeight: FontWeight.w500,
                   color: AppColors.C_6A6A6E
               ),),
               Row(children: [
-                Text(price, style: TextStyle(
+                Text(price, style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w700,
                     color: AppColors.white
                 )),
-                Spacer(),
+                const Spacer(),
                 Container(
                   decoration: BoxDecoration(
                       color: AppColors.C_16151B,
                       borderRadius: BorderRadius.circular(10)
                   ),
                   height: 18, width: 38, child: Center(
-                  child: Text(price, style: TextStyle(
+                  child: Text(price, style: const TextStyle(
                       fontSize: 9,
                       fontWeight: FontWeight.w500,
                       color: AppColors.C_6A6A6E
                   )),
                 ),),
-                SizedBox(width: 6,),
+                const SizedBox(width: 6,),
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       gradient: LinearGradient(
                         colors: [
                           AppColors.C_E1D24A,
@@ -75,7 +75,7 @@ class GridProduct extends StatelessWidget {
                       ),
                       shape: BoxShape.circle
                   ),
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   height: 34, width: 34, child: SvgPicture.asset(plusIcon, width: 10, height: 10,),)
               ],)
             ],
