@@ -21,6 +21,5 @@ class ExampleHeaderView extends SliverPersistentHeaderDelegate {
   double get minExtent => 105;
 
   @override
-  bool shouldRebuild(covariant SliverPersistentHeaderDelegate oldDelegate) =>
-      true;
+  bool shouldRebuild(covariant SliverPersistentHeaderDelegate oldDelegate) => true;
 }

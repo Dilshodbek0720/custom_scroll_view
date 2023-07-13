@@ -1,6 +1,5 @@
-import 'package:custom_scroll_view/screens/widgets/example_header_view.dart';
-import 'package:custom_scroll_view/screens/widgets/pinned_header_view.dart';
-import 'package:custom_scroll_view/screens/widgets/user_item.dart';
+import 'package:custom_scroll_view/screens/example/widgets/example_header_view.dart';
+import 'package:custom_scroll_view/screens/example/widgets/pinned_header_view.dart';
 import 'package:flutter/material.dart';
 
 class ExampleScreenFour extends StatefulWidget {
